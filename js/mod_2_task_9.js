@@ -22,16 +22,13 @@ function addLogin(allLogins, login) {
   const ERROR = 'Ошибка! Логин должен быть размером от 4 до 16 символов';
   let message;
   if (isLoginValid(login) === false) {
-    message = ERROR;
-    return message;
+    return (message = ERROR);
   }
   if (isLoginUnique(allLogins, login) === false) {
-    message = REFUSAL;
-    return message;
+    return (message = REFUSAL);
   }
   allLogins.push(login);
-  message = SUCCESS;
-  return message;
+  return (message = SUCCESS);
 }
 
 const logins = ['Mango', 'robotGoogles', 'Poly', 'Aj4x1sBozz', 'qwerty123'];
