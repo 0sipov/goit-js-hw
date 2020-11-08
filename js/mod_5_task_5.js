@@ -22,7 +22,7 @@ class Car {
     }
     turnOff() {
         this.isOn = false;
-        this.speed = 0;
+        this.speed = 0; 
     }
     accelerate(value) {
         const futureSpeed = this.speed + value;
